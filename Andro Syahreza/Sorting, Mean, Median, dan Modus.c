@@ -1,10 +1,5 @@
 #include <stdio.h>
 
-/*  Program Sorting, Mean, Median, dan Modus
-    Andro Syahreza
-    175090807111007
-*/
-
 int main()
 {
     int n, swap=0, arr[n];
@@ -40,7 +35,7 @@ int main()
         else if(n%2==0){
             med_1=((n/2)-1);
             med_2=(n/2);
-            median=(arr[med_1]+arr[med_2])/2;
+            median=((float)arr[med_1]+(float)arr[med_2])/2;
             } 
     }
     
@@ -48,7 +43,7 @@ int main()
         frek[i]=0;
         for (int j=0; j<n; j++){
         if(arr[j]==i){
-            frek[i]+=+1;}}
+            frek[i]+=1;}}
         if(frek[i]>max){
             max=frek[i];
             modus=i;}
